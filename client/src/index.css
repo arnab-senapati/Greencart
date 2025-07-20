@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+/* Add the @keyframes here */
+@keyframes typing {
+  from {
+    width: 2;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* 🌀 Smooth left-to-right scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@layer utilities {
+  .animate-scroll {
+    animation: scroll 20s linear infinite;
+  }
+}
+
+ 
+
+
+
+@import "tailwindcss";
+
+*{
+  font-family: "outfit" , sans-serif;
+}
+
+@theme{
+  --color-primary: #4fbf8b;
+  --color-primary-dull: #44ae7c;
+}
+
+.no-scrollbar::-webkit-scrollbar{
+  display:none;
+}
+
+
+#gradient-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    rgba(186, 241, 182, 0.4),   /* Tailwind blue-500 @ 40% */
+    rgba(205, 246, 204, 0.1),
+    transparent 80%
+  );
+  transition: background 0.2s ease;
+  pointer-events: none;
+}
+
+/* If using plain CSS */
+.dropdown-smooth {
+  max-height: 20px;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease, opacity 300ms ease, transform 200ms ease;
+  transform-origin: top;
+  transform: translateY(-10px);
+}
+
+.dropdown-smooth.open {
+  max-height: 300px; /* large enough to show content */
+  opacity: 1;
+  transform: translateY(0);
+  overflow: visible;
+}
+
+
+@keyframes slideInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.3s forwards;
+}
+
+.animate-slideInRight {
+  animation: slideInRight 0.3s forwards;
+}
