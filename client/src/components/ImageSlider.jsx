@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
-import imageSlides from '../assets/assets'; // <-- ✅ import from assets.js
+import imageSlides from '../assets/assets';
 
 const ImageSlider = () => {
   const sliderRef = useRef(null);
