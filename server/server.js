@@ -22,7 +22,6 @@ await connectCloudinary();
 // Allow multiple frontend origins
 const allowedOrigins = [
   'http://localhost:5173',
-  'https://greencart-frontend-flak.onrender.com',
 ];
 
 // Stripe raw route must come before express.json()

@@ -94,6 +94,7 @@ import side2 from "./o2.png";
 import side3 from "./o3.png";
 import side4 from "./o4.png";
 
+
 const imageSlides = [
   {
     image: side1,
@@ -122,6 +123,25 @@ const imageSlides = [
 ];
 
 export default imageSlides;
+
+// src/assets/assets.js
+import image1 from './p1.png';
+import image2 from './p2.png';
+import image3 from './p3.png';
+import image4 from './p4.png';
+import image5 from './p5.png';
+import image6 from './p6.png';
+import image7 from './p7.png';
+
+export const galleryImages = [
+  { img: image1, label: 'Organic Veggies', path: '/products/vegetables' },
+  { img: image2, label: 'Fresh Fruits', path: '/products/fruits' },
+  { img: image3, label: 'Dairy Delights', path: '/products/dairy' },
+  { img: image4, label: 'Bakery Treats', path: '/products/bakery' },
+  { img: image5, label: 'Dry Groceries', path: '/products/groceries' },
+  { img: image6, label: 'Healthy Snacks', path: '/products/snacks' },
+  { img: image7, label: 'Beverages', path: '/products/beverages' },
+];
 
 
 export const assets = {

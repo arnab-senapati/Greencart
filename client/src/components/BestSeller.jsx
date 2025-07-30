@@ -34,7 +34,7 @@ const BestSeller = () => {
   return (
     <div className="mt-16 w-screen overflow-hidden p-0 m-0">
       <div className="px-0">
-        <p className="text-2xl md:text-3xl font-medium mb-4">Best Seller</p>
+        <p className="text-2xl md:text-3xl font-medium mb-4">Top Picks</p>
       </div>
 
 {/* Scroll container */}
